@@ -20,7 +20,7 @@ config(): void {
     this.app.use(cors());
     this.app.use(express.json());
     this.app.use(express.urlencoded({extended:false}));
-    this.app.use('/public',express.static(path.join(__dirname +'/public')));
+    this.app.use('/Documents',express.static(path.join(__dirname +'/Documents')));
 
     
 }
